@@ -81,6 +81,11 @@ ol {
   align-items: flex-start;
 }
 
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 /* Правая колонка с названием приложения и списком видео */
 
 .content__details {
@@ -91,6 +96,14 @@ ol {
 
 .title {
   margin-bottom: 26px;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list-container {
@@ -98,29 +111,56 @@ ol {
   flex-direction: column;
   gap: 30px 0;
   height: 298px;
-  overflow: hidden scroll;
+  overflow-y: scroll;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px 0;
+  gap: 30px;
+}
+
+.content__card-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
 .content__video-card {
   display: flex;
-  align-items: flex-start;
 }
 
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
+}
+
+.content__video-card-title {
+  max-width: 194px;
+  overflow: hidden;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: 16.2px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
 }
 
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 103px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
