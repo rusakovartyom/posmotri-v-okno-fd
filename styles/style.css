@@ -139,11 +139,11 @@ ol {
 
 .content__video-card-title {
   max-width: 194px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  margin-left: 3px;
   overflow: hidden;
   font-family: Oswald, sans-serif;
-  margin-top: 4px;
-  margin-left: 3px;
-  margin-bottom: 6px;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
